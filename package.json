@@ -1,21 +1,48 @@
 {
-  "name": "IoC-experiments",
-  "version": "1.0.0",
-  "description": "Proving ground for IoC + JS ideas",
-  "main": "src/main.js",
-  "scripts": {
-    "start": "node src/main.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/ArturJS/IoC-experiments.git"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/ArturJS/IoC-experiments/issues"
-  },
-  "homepage": "https://github.com/ArturJS/IoC-experiments#README.md"
+    "name": "IoC-experiments",
+    "version": "1.0.0",
+    "description": "Proving ground for IoC + JS ideas",
+    "main": "src/main.js",
+    "scripts": {
+        "start": "node src/index.js",
+        "debug": "node --inspect-brk src/index.js",
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "lint-staged": "npx lint-staged"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/ArturJS/IoC-experiments.git"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/ArturJS/IoC-experiments/issues"
+    },
+    "homepage": "https://github.com/ArturJS/IoC-experiments#README.md",
+    "dependencies": {
+        "@babel/core": "^7.2.2",
+        "@babel/preset-env": "^7.2.3",
+        "@babel/register": "^7.0.0",
+        "inversify": "^5.0.1",
+        "inversify-vanillajs-helpers": "^2.0.0",
+        "reflect-metadata": "^0.1.12"
+    },
+    "devDependencies": {
+        "husky": "^1.3.1",
+        "lint-staged": "^8.1.0",
+        "prettier": "^1.15.3"
+    },
+    "lint-staged": {
+        "src/**/*.js": [
+            "prettier --write",
+            "git add"
+        ]
+    },
+    "husky": {
+        "hooks": {
+            "post-commit": "git update-index --again",
+            "pre-commit": "npm run lint-staged"
+        }
+    }
 }
