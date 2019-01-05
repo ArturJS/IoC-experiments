@@ -5,10 +5,10 @@ import { FilesBLL, FilesDAL } from '../modules/files';
 import { NotesBLL, NotesDAL } from '../modules/notes';
 
 export const TYPES = {
-    FilesDAL: 'FilesDAL',
-    FilesBLL: 'FilesBLL',
-    NotesDAL: 'NotesDAL',
-    NotesBLL: 'NotesBLL'
+    FilesDAL: Symbol('FilesDAL'),
+    FilesBLL: Symbol('FilesBLL'),
+    NotesDAL: Symbol('NotesDAL'),
+    NotesBLL: Symbol('NotesBLL')
 };
 
 // 'useClass' taken from
