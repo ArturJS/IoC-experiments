@@ -1,0 +1,21 @@
+{
+  "name": "IoC-experiments",
+  "version": "1.0.0",
+  "description": "Proving ground for IoC + JS ideas",
+  "main": "src/main.js",
+  "scripts": {
+    "start": "node src/main.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ArturJS/IoC-experiments.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ArturJS/IoC-experiments/issues"
+  },
+  "homepage": "https://github.com/ArturJS/IoC-experiments#README.md"
+}
