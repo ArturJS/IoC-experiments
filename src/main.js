@@ -1,6 +1,6 @@
-import { createContainer, TYPES } from './di';
+import { createBaseDIContainer, TYPES } from './di';
 
-const container = createContainer();
+const container = createBaseDIContainer();
 const notesBLL = container.get(TYPES.NotesBLL);
 const filesBLL = container.get(TYPES.FilesBLL);
 const note = notesBLL.create({ title: 'Note1', files: ['file1', 'file2'] });
