@@ -1,1 +1,2 @@
-export * from './base-di-container';
+export { createBaseDIContainer } from './base-di-container';
+export { createDIModule } from './utils/create-di-module';

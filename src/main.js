@@ -1,4 +1,5 @@
-import { createBaseDIContainer, TYPES } from './di';
+import { createBaseDIContainer } from './di';
+import { TYPES } from './modules/di.types';
 
 const container = createBaseDIContainer();
 const notesBLL = container.get(TYPES.NotesBLL);

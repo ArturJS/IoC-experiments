@@ -1,2 +1,1 @@
-export * from './notes.dal';
-export * from './notes.bll';
+export * from './notes.di';

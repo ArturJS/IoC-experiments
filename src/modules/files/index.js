@@ -1,2 +1,1 @@
-export * from './files.dal';
-export * from './files.bll';
+export * from './files.di';
