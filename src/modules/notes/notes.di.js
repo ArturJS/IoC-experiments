@@ -1,4 +1,4 @@
-import { createDIModule } from '../../di/utils/create-di-module';
+import { createDIModule } from '../../di/create-di-module';
 import { FILES_DI_TYPES } from '../files';
 import { NotesDAL } from './notes.dal';
 import { NotesBLL } from './notes.bll';
